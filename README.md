@@ -1,0 +1,2 @@
+# BasicPython
+Python Exercices 
