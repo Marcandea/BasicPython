@@ -1,5 +1,5 @@
 from unittest import TestCase
-from src.fibonacci import Fibonacci
+from BasicPython.Practices.src.fibonacci import Fibonacci
 class TestFibonacci (TestCase):
     def test_fi(self):
         # Arrange
