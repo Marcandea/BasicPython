@@ -65,3 +65,12 @@ class TestStrong(TestCase):
         # Assert
         result_expected = "No Strong"
         self.assertEqual(result_expected, result)
+
+    def test_factorial(self):
+        # Arranque
+        st = Strong()
+        # Assert
+        result = st.factorial(5)
+        # Assert
+        result_expected = 120
+        self.assertEqual(result_expected, result)
