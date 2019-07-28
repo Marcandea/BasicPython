@@ -1,6 +1,5 @@
 from unittest import TestCase
-from src.strong import Strong
-
+from BasicPython.Practices.src.strong import Strong
 
 class TestStrong(TestCase):
     def test_noNtrong(self):
@@ -52,7 +51,7 @@ class TestStrong(TestCase):
         # Arranque
         st = Strong()
         # Assert
-        result = st.strongNumber(123)
+        result = st.strongNumber(-1)
         # Assert
         result_expected = "Negative Number"
         self.assertEqual(result_expected, result)

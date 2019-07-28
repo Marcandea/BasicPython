@@ -4,6 +4,8 @@ class Strong:
         num = 0
         mult = 1
         result = 0
+        if num1 < 0:
+            return "Negative Number"
         for i in string:
             entero = int(i)
             for n in range(entero):
@@ -14,6 +16,7 @@ class Strong:
 
             result = mult + result
             mult = 1
+
         if result == num1:
             return "Strong"
         else:
