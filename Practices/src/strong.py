@@ -1,5 +1,6 @@
 class Strong:
     def strongNumber(self, num1: int):
+
         string = str(num1)
         num = 0
         mult = 1
@@ -8,12 +9,7 @@ class Strong:
             return "Negative Number"
         for i in string:
             entero = int(i)
-            for n in range(entero):
-                num = entero - n
-                mult = mult * num
-
-                # print(num,mult)
-
+            self.factorial(entero)
             result = mult + result
             mult = 1
 
@@ -21,3 +17,9 @@ class Strong:
             return "Strong"
         else:
             return "No Strong"
+    def factorial(self, entero: int):
+        mult=1
+        for n in range(entero):
+            num = entero - n
+            mult = mult * num
+        return mult
